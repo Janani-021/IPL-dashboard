@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <title>DLF IPL</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ipl2025.png" alt="">
+            </div>
+
+            <div class="background">
+                <img src="images/iplt.png" id="logobg" alt="">
+            </div>
+
+            <div class="heading">
+                <h1 id="head">
+                    IPL
+                </h1>
+                <p>The Indian Premier League (IPL) is more than just a cricket tournament — it's a celebration of sport, culture, and electrifying entertainment. Every season brings together world-class players, passionate fans, and unforgettable moments that redefine the spirit of T20 cricket. From nail-biting finishes to record-breaking performances, IPL continues to unite millions across the globe, making it one of the most watched and loved sporting events in history.
+</p>
+                <button>WATCH NOW</button>
+            </div>
+            <div class="image">
+                <img id="myimage" src="images/iplc.png" alt="">
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Team</li>
+                    <li>Performance</li>
+                    <li>Rank</li>
+                </ul>
+            </div>
+            <div class="empty">
+
+            </div>
+            <div class="list">
+                <ol>
+                    <li onclick="myFun('images/cskp.png','gold','Chennai Super Kings', 'images/csk3.png')">CSK</li>
+                    <li onclick="myFun('images/dcp.png','blue','Delhi Capitals', 'images/ddlogo.png')">DC</li>
+                    <li onclick="myFun('images/gtp.png','#1a1f4c','Gujrat Titans', 'images/gtlogo.png')">GT</li>
+                    <li onclick="myFun('images/kkrp.png','purple','Kolkatta Knight Riders', 'images/kkrlogo.png')">KKR</li>
+                    <li onclick="myFun('images/lsgp.png','blue','Lucknow Super Gaints', 'images/lsglogo.png')">LSG</li>
+                    <li onclick="myFun('images/mip.png','dodgerblue','Mumbai Indians', 'images/milogo.png')">MI</li>
+                    <li onclick="myFun('images/pbksp.png','red','Punjab Kings', 'images/pbkslogo.png')">PBKS</li>
+                    <li onclick="myFun('images/rcbp.png','red','Royal Challengers Banglore', 'images/rcblogo.png')">RCB</li>
+                    <li onclick="myFun('images/rrp.png','#ff3385','Rajasthan Royals', 'images/rrlogo.png')">RR</li>
+                    <li onclick="myFun('images/srhp.png','orangered','SunRisers Hyderabad', 'images/srhlogo.png')">SRH</li>
+                </ol>
+            </div>
+        </div>
+
+        <script>
+            function myFun(image,color,head,logo){
+                document.getElementById('myimage').src=image;
+                document.querySelector('.empty').style.backgroundColor=color;
+                document.querySelector('button').style.backgroundColor=color;
+                document.getElementById('head').innerHTML=head;
+                document.getElementById('logobg').src=logo;
+            }
+        </script>
+
+
+    </body>
+</html>
